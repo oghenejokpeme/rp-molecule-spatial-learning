@@ -6,3 +6,5 @@ This is where all the path signatures for each molecule will be stored. The mole
 When run, the signature paths, based on the specified configuration will be placed in `output/molecule_id`, where `molecule_id` is the molecule filename supplied in `DBPATH`.
 
 Path signature generation can be done sequentially or in parallel. This is done by passing `True` or `False` to `main()`.  Parallel execution is used if `True`. Path signature generation is done in parallel by default.
+
+Once all this is setup, running the program requires executing `main.py` from terminal.

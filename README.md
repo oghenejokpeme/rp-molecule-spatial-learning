@@ -7,4 +7,4 @@ When run, the signature paths, based on the specified configuration will be plac
 
 Path signature generation can be done sequentially or in parallel. This is done by passing `True` or `False` to `main()`.  Parallel execution is used if `True`. Path signature generation is done in parallel by default.
 
-Once all this is setup, running the program requires executing `main.py` from terminal.
+Once all this is setup, running the program requires executing `main.py` from the terminal or within a notebook.

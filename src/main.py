@@ -227,8 +227,7 @@ def write_coordinate_ps(molecule, molecule_atom_paths, signature_degree,
                 coord_matrix = np.zeros([len(atom_path), 3])
                 for j in range(len(atom_path)):
                     coord_matrix[j, :] = molecule.atoms[atom_path[j]].coordinates
-                sig = signature_function(np.transpose(coord_matrix),
-                                         signature_degree)
+                sig = signature_function(coord_matrix, signature_degree)
                 rsig = [str(val) for val in sig]
                 atom_path_index = str(atom_index) + '_' + str(path_index)
                 line = atom_path_index + ' ' + ' '.join(rsig) + '\n'
